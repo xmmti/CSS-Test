@@ -13,29 +13,24 @@
         <div class="navBar">
             <ul>
                 <i class="button-toggle material-icons-new round-subdirectory_arrow_right icon-white"></i>
-                <i class="material-icons-new round-account_circle icon-white"></i>
-                <i class="material-icons-new round-subject icon-white"></i>
-                <i class="material-icons-new round-self_improvement icon-white"></i>
-                <i class="material-icons-new round-help icon-white"></i>
+                <i class="material-icons-new round-account_circle icon-white" hi="hi2"></i>
+                <i class="material-icons-new round-subject icon-white" hi="hi2"></i>
+                <i class="material-icons-new round-self_improvement icon-white" hi="hi2"></i>
+                <i class="material-icons-new round-help icon-white" hi="hi2"></i>
             </ul>
         </div>
     </nav>
     <script>
         const mql = window.matchMedia("(max-width: 769px)");
-            nav()
-        function nav(){
-            if (mql.matches === true){
         document.querySelector(".navBar > ul i").addEventListener("click", function(el){
+            if (mql.matches === true){
         if(document.querySelector(".navBar").className.indexOf("navBar_") > -1 ){ 
             el.target.parentElement.parentElement.classList.remove("navBar_");
             el.target.classList.remove("clicked")
         }else{
                 el.target.parentElement.parentElement.classList.add("navBar_");
                 el.target.classList.add("clicked")
-            } 
-            })
-            }
-        }
+            }}})
     </script>
 </body>
 </html>
